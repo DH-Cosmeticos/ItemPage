@@ -1,0 +1,390 @@
+*{
+    box-sizing: border-box;
+    font-size:24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    margin: auto;
+    background-color: rgba(0, 225, 255, 0.212);
+
+}
+
+/* Layout Mobile */
+@media(max-width:880px){
+.l-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.l-nav{
+    width: 100vw;
+    height: 15vh;
+    background-color: rgb(187, 119, 243);
+}
+.l-footer{
+    width: 100vw;
+    height: 30vh;
+    background-color:rgb(187, 119, 243);
+}
+/* layout principal*/
+.l-main{
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    background-color: rgba(168, 168, 168, 0.541);
+    position: relative;
+
+}
+.l-main>.l-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 80vw;
+    padding: 15px;
+    border-radius:15px ;
+}
+.l-main>.l-produto>img{
+    width: 60vw;
+    height: 40vh;
+    border-radius: 5px;
+    margin: auto;
+}
+.l-produto>button{
+    height: 8vh;
+    width: 50vw;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    border-color: transparent;
+    cursor: pointer;
+    margin: 3px auto;
+}
+.l-produto>button:active{
+    background-color: greenyellow;
+}
+.l-produto>.p-text{margin: 10px;}
+.l-produto>.p-text>p{
+    margin: 0px 0px;
+    font-weight: 600;
+}
+.l-main>.l-descrição{
+    height: 27vh;
+    width: 80vw;
+    border-radius: 15px;
+    background-color: white;
+    padding: 15px;
+}
+.l-main>.l-descrição>p{
+    width: 70vw;
+    height: 25vh;
+    font-size: 12px;
+    margin: 0%;
+}
+.l-main>.l-descrição>h4{
+    margin: 5px;
+    font-size: 18px;
+}
+
+.l-main>.l-produto>.bt-img{ 
+    position: absolute;
+    left: auto;
+    top: 35%;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.l-main>.l-produto>.bt-img>div{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: solid black 2px;
+    width: 45px;
+    height: 15px;
+    cursor: pointer;
+}
+/*layout relacionados*/
+.l-aside{
+    width: 100vw;
+    height: 120vh;
+    padding: 2% 2%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.l-aside>h1{
+    text-align: center;
+    font-weight: 700;
+}
+.l-itemY{
+    position: relative;
+    width: 90vw;
+    height: 25vh;
+    background-color: rgba(168, 168, 168, 0.541);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px 5px;
+    
+}
+.l-itemY>img{
+    position: absolute;
+    border-radius: 5px;
+    height:20vh;
+    width: 40vw;
+    left:3%;
+    margin: auto ;
+}
+.l-itemY>.i-text{
+    position: absolute;
+    left: 50%;
+}
+.l-itemY>.i-bt{
+    position:absolute;
+    right: 15%;
+    height:20vh;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: end;
+    gap: 2px;
+    margin: auto;
+}
+.l-itemY>.i-bt>button{
+    width: 30vw;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    border-color: transparent;
+    cursor: pointer;
+    
+}
+.l-itemY>.i-bt>button:active{
+    background-color: greenyellow;
+}
+.l-itemY>.i-text>p{ 
+    margin:6px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.l-itemY>.bt-favorito{
+    position: absolute;
+    right: 3%;
+    font-size: 40px;
+    background-color: transparent;
+    border: transparent;
+}
+.l-itemY>.bt-favorito:active{
+    color: red;
+}
+}
+
+
+/* Layout Web responsivo */
+
+@media(min-width:880px){
+    .l-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .l-nav{
+        width: 100vw;
+        height: 15vh;
+        background-color: rgb(187, 119, 243);
+    }
+    .l-footer{
+        width: 100vw;
+        height: 30vh;
+        background-color: rgb(187, 119, 243);
+    }
+    /* layout principal*/
+    .l-main{
+        width: 90vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        background-color: rgba(168, 168, 168, 0.541);
+        position: relative;
+    
+    }
+   
+    
+
+    .l-main>.l-produto{
+        background-color: white;
+        height: 35vh;
+        width: 70vw;
+        padding: 25px 5px;
+        border-radius:15px ;
+        display: flex;
+        flex-direction: row;  
+        align-items: flex-start;
+        position: relative;
+    }
+    
+    .l-main>.l-produto>img{
+        height: 30vh;
+        width: 35vw;
+        border-radius: 5px;
+        margin:  0 3%;
+    }
+    .l-produto>button{
+        height: 8vh;
+        width: 25vw;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 5px;
+        border-color: transparent;
+        cursor: pointer;
+        margin: 3px auto;
+    }
+    .l-produto>button:active{
+        background-color: greenyellow;
+    }
+    #p-bt1{
+       position: absolute;
+       right: 5%;
+       bottom: 5%; 
+    }
+    #p-bt2{
+        position: absolute;
+        right: 5%;
+        bottom: 30%; 
+    }
+    .l-produto>.p-text{
+        margin: 10px;
+        
+    }
+    .l-produto>.p-text>p{
+        margin: 0px 0px 15px 0px;
+        font-size: 30px;
+    }
+    .l-main>.l-descrição{
+        height: 20vh;
+        width: 70vw;
+        border-radius: 15px;
+        background-color: white;
+        padding: 15px;
+    }
+    .l-main>.l-descrição>p{
+        width: 65vw;
+        height: 40vh;
+        font-size: 12px;
+        margin: 0%;
+    }
+    .l-main>.l-descrição>h4{
+        margin: 5px;
+        font-size: 18px;
+    }
+    
+    .l-main>.l-produto>.bt-img{ 
+        position: absolute;
+        left: 20%;
+        bottom: 10%;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .l-main>.l-produto>.bt-img>div{
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        border: solid black 2px;
+        width: 45px;
+        height: 15px;
+        cursor: pointer;
+    }
+    /*layout relacionados*/
+    .l-aside{
+        width: 100vw;
+        height: 60vh;
+        padding: 2% 2%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .l-aside>h1{
+        text-align: center;
+        font-weight: 700;
+    }
+    .l-relacionados{
+        display: flex;
+        flex-direction: row;
+    }
+    .l-itemY{
+        position: relative;
+        width: 25vw;
+        height: 45vh;
+        background-color: rgba(168, 168, 168, 0.541);
+        border-radius: 10px;
+        margin: 10px;
+        padding: 5px 5px;
+        
+    }
+    .l-itemY>img{
+        position: absolute;
+        border-radius: 10px;
+        height:20vh;
+        width: 18vw;
+        margin: 40px 3%;
+    }
+    .l-itemY>.i-text{
+        position: absolute;
+        left: 50%;
+    }
+    .l-itemY>.i-bt{
+        position:absolute;
+        right: 15%;
+        bottom: 5%;
+        height:20vh;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: end;
+        gap: 10px;
+        margin: auto;
+    }
+    .l-itemY>.i-bt>button{
+        width: 15vw;
+        height: 4vh;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 5px;
+        border-color: transparent;
+        cursor: pointer;
+        
+    }
+    .l-itemY>.i-bt>button:active{
+        background-color: greenyellow;
+    }
+    .l-itemY>.i-text{
+        position: absolute;
+        left: 5%;
+        top: 55%;
+    }
+    .l-itemY>.i-text>p{ 
+        margin:6px 0;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .l-itemY>.bt-favorito{
+        position: absolute;
+        right: 3%;
+        font-size: 40px;
+        background-color: transparent;
+        border: transparent;
+    }
+    .l-itemY>.bt-favorito:active{
+        color: red;
+    }
+    }
+    
